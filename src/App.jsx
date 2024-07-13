@@ -1,14 +1,19 @@
-import Botao from "./Botao"
-import Header from "./Header"
-import Text from "./Text"
-
+import { useState } from "react"
+import Principal from "./pages/Principal"
+import Botao from "./components/Botao"
+import Dados from "./components/Dados"
 const App = () => {
+  const nome = "Kay"
+  const profissao = "programadora"
+  const idade = 18
+  
+
   return (
-    <> {/*fragment*/}
-      <Header />
-      <Text />
-      <Botao />
+    <>
+      <Principal />
+      <Dados x={nome} y={profissao} z={idade} />
     </>
+
   )
 }
 export default App
